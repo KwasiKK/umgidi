@@ -1,0 +1,133 @@
+/* Side Menu */
+
+#sidebar-wrapper {
+  margin-right: -250px;
+  top:0;
+  right: 0;
+  width: 200px;
+  background: #000000;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+#brand{
+	border-radius: 10px;
+	 -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+
+}
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+  color: #999999;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+.sidebar-nav #link1 a:hover {
+  background-color: #FC2D2D;
+}
+
+.sidebar-nav #link2 a:hover {
+  background-color: #29267E;
+}
+
+.sidebar-nav #link3 a:hover {
+  background-color: #1E6123;
+}
+
+.sidebar-nav #link5 a:hover {
+  background-color: rgba(197, 143, 13, 1);
+}
+
+.sidebar-nav #link6 a:hover {
+  background-color: #FC2D2D;
+}
+
+.sidebar-nav #link7 a:hover {
+  background-color: #1E6123;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 55px;
+  line-height: 55px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #999999;
+  background: none;
+}
+
+#artist-login{
+width: 200px;
+text-align:center;
+}
+
+#menu-toggle {
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 200px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.toggle {
+  margin: 5px 5px 0 0;
+}
+
+.paragraph{
+	color:white;
+	font-weight:bold;
+	width: 80%;
+	margin-top: 70px;
+	font-size:20px;
+}
+
+/* Full Page Image Header Area */
+
+
+

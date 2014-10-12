@@ -1,0 +1,179 @@
+html, body {
+	height:100%;
+}
+
+.content{
+	right:40px;
+	left: 40px;
+	top: 0px;
+	position: absolute;
+	padding-bottom: 30px;
+	
+}
+
+#map_canvas{
+	border-radius:10px;
+}
+#contact-us{
+line-height: 50px;
+font-size: 20px;
+color: #fff;
+font-weight: bold;
+}
+
+#contact-us label { display: inline-block; width: 140px; text-align: right; }
+
+#contact-us input, textarea{
+	border: 1px solid #ccc;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 2px 2px 3px #666;
+	-webkit-box-shadow: 2px 2px 3px #666;
+	box-shadow: 2px 2px 3px #666;
+	font-size: 20px;
+	padding: 4px 7px;
+	outline: 0;
+	-webkit-appearance: none;
+}
+#contact-us textarea:focus{
+	border-color: #339933;
+}
+
+#contact-us label:focus{
+	border-color: #339933;
+}
+
+select {
+    width:300px;
+    border:1px solid #ccc;
+    -webkit-border-top-right-radius: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+    -moz-border-radius-topright: 15px;
+    -moz-border-radius-bottomright: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding:2px;
+}
+#button1{
+/* Chrome, Safari, Opera */
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: myfirst;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+
+}
+
+#button2{
+	/* Chrome, Safari, Opera */
+    -webkit-animation-name: bob;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: bob;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {background:red; left:0px; top:0px;}
+    25%  {background:yellow; left:600px; top:0px;}
+    50%  {background:blue; left:200px; top:200px;}
+    75%  {background:green; left:0px; top:400px;}
+    100% {background:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {background:red; left:0px; top:0px;}
+    25%  {background:yellow; left:200px; top:0px;}
+    50%  {background:blue; left:200px; top:200px;}
+    75%  {background:green; left:0px; top:200px;}
+    100% {background:red; left:0px; top:0px;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bob {
+    0%   {background:red; left:100px; top:100px;}
+    25%  {background:yellow; left:300px; top:200px;}
+    50%  {background:blue; left:800px; top:0px;}
+    75%  {background:green; left:400px; top:200px;}
+    100% {background:red; left:300px; top:100px;}
+}
+
+/* Standard syntax */
+@keyframes bob {
+    0%   {background:red; left:0px; top:0px;}
+    25%  {background:yellow; left:0px; top:200px;}
+    50%  {background:blue; left:200px; top:0px;}
+    75%  {background:green; left:200px; top:200px;}
+    100% {background:red; left:0px; top:0px;}
+}
+.cinema{
+	width: 92.3%;
+	min-height: 100%;
+	position: absolute;
+	background-color: #000;
+	box-shadow: 4px -4px 4px rgba(0,0,0,0.2);
+	margin-left: -102%;
+	-webkit-transition: all .6s ease-in-out;
+	-moz-transition: all .6s ease-in-out;
+	-o-transition: all .6s ease-in-out;
+	-ms-transition: all .6s ease-in-out;
+	transition: all .6s ease-in-out;
+	border-radius: 10px;
+	 -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+.cinema:target{
+	margin-left: 0%;
+	background-color: #000;
+	background-color: rgba(0,0,0,0.5);
+}
+#home:target ~ #header #navigation #link-home,
+#artist:target ~ #header #navigation #link-artist,
+#services:target ~ #header #navigation #link-services,
+#gallery:target ~ #header #navigation #link-gallery,
+#travel:target ~ #header #navigation #link-travel,
+#about:target ~ #header #navigation #link-about,
+#contact:target ~ #header #navigation #link-contact{
+	background: #000;
+	color: #fff;
+}
+.loadmore {
+	padding: 10px;
+	background: #ddd;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-align: center;
+	cursor: pointer;
+	margin: 10px 4px;
+	display: none;
+}
+
+.loadmore:hover {
+	background: #333;
+}
